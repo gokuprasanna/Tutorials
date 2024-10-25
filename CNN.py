@@ -18,10 +18,16 @@ class cnn(nn.Module):
         self.output_paddings = output_paddings
 
     def network(self):
+        """
+        build a network with CNNs 
+        """
 
 
 
     def forward(self, x):
+        """
+        forward computation for convolutional network
+        """
 
 
 
