@@ -1,7 +1,9 @@
-# Tutorials
+# Tutorials (Work in Progress)
 Personal project to revisit all types of neural networks from to Transformer and state space models
 and some examples with visualizations. 
+
 ToDo: Improve explaination and finish transformer, vae, state space model, pvrnn and mtrnn models. Also fix the links for the images
+
 # Neural Network Models Explained
 
 This document explains the different neural network models implemented in `models.py` and how they work.
@@ -21,7 +23,7 @@ This document explains the different neural network models implemented in `model
 - Processes sequences by maintaining a hidden state.
 - Useful for tasks like time series prediction and natural language processing.
 
-![RNN Architecture](https://upload.wikimedia.org/wikipedia/commons/3/3b/The_LSTM_cell.png)
+
 
 ## 3. Long Short-Term Memory (LSTM)
 
@@ -37,7 +39,7 @@ This document explains the different neural network models implemented in `model
 - A simplified version of LSTM with fewer parameters.
 - Uses reset and update gates to control hidden states.
 
-![GRU Architecture](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/GRU.png)
+
 
 ## 5. Artificial Neural Network (ANN)
 
@@ -67,6 +69,4 @@ This document explains the different neural network models implemented in `model
 2. Train the model on MNIST dataset.
 3. Evaluate accuracy using test data.
 4. Adjust hyperparameters via `config.json`.
-
-For further details, refer to the `models.py` implementation.
 
