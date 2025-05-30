@@ -1,8 +1,71 @@
 # Tutorials (Work in Progress)
-Personal project to revisit all types of neural networks from to Transformer and state space models
+Personal project to revisit all types of neural networks fromPerceptron to Transformer and state space models
 and some examples with visualizations. 
 
 ToDo: Improve explaination and finish transformer, vae, state space model, pvrnn and mtrnn models. Also fix the links for the images
+
+# Biological Neuron and Neural Network Simulation
+
+## Overview
+This document provides an explanation of the **Leaky Integrate-and-Fire (LIF) neuron model** and its extension to a **biological neural network simulation**.
+
+## Leaky Integrate-and-Fire Neuron
+The LIF neuron is a simplified mathematical model of biological neurons. It models how a neuron integrates input signals and fires an action potential when a threshold is reached.
+
+### **Equations**
+The membrane potential \( V(t) \) of the neuron evolves according to:
+
+\[
+\tau \frac{dV}{dt} = -(V - V_{rest}) + R I(t)
+\]
+
+where:
+- \( \tau \) = Membrane time constant (ms)
+- \( V_{rest} \) = Resting membrane potential (mV)
+- \( R \) = Membrane resistance (MΩ)
+- \( I(t) \) = Input current (nA)
+
+If \( V \) reaches a threshold value, the neuron fires and resets to a lower potential.
+
+### **Simulation & Visualization**
+The neuron receives input current, and its membrane potential is plotted over time, visualizing its firing behavior.
+
+**Figure 1: LIF Neuron Simulation**
+
+![LIF Neuron](lif_neuron_plot.png)
+
+## Biological Neural Network
+A simple neural network is built using multiple LIF neurons, where neurons interact with each other through synaptic connections.
+
+### **Network Dynamics**
+Each neuron receives:
+1. **External input currents**
+2. **Influence from other neurons** via weighted connections
+
+### **Equation with Synaptic Input**
+\[
+\tau \frac{dV_i}{dt} = -(V_i - V_{rest}) + R I_i + \sum_{j} W_{ij} V_j
+\]
+
+where \( W_{ij} \) is the connection strength between neurons.
+
+### **Simulation & Visualization**
+The network activity is animated, showing how neurons fire in response to stimuli.
+
+**Figure 2: Neural Network Simulation**
+
+![Neural Network](neural_network_plot.png)
+
+## Conclusion
+This simulation demonstrates how simple neuron models can be used to build biologically inspired neural networks. These models help us understand **information processing in the brain** and develop **biologically plausible AI systems**.
+
+---
+
+### **References**
+- Dayan, P., & Abbott, L. (2001). Theoretical Neuroscience.
+- Gerstner, W., & Kistler, W. (2002). Spiking Neuron Models.
+
+
 
 # Neural Network Models Explained
 
